@@ -27,14 +27,20 @@ li {
     display: inline-block;
 }
 .container {
-    margin: 0 140px;
+    margin: 0 8.75rem;
 }
 
 /* buttons */
+.banner__buttons a,
+.footer__buttons a,
+.share__page_info a,
+.how_connected a {
+    width: 17rem;
+}
 .btn {
     display: inline-block;
     border-radius: 1rem;
-    padding: 1.5rem 0;
+    padding: 1.4rem 0;
     font-size: 1.5rem;
     font-weight: 500;
     text-align: center;
@@ -115,6 +121,9 @@ section.text__messages {
     font-size: 1.5rem;
     font-weight: 400;
     line-height: 2em;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
 }
 .left_text-list .left_text-item span {
     display: inline-block;
@@ -126,13 +135,9 @@ section.text__messages {
     border-radius: 50%;
     background-color: #2d2d2d;
 }
-.buttons-box a.btn {
-    width: 16rem;
-}
 .right_img-box img {
     display: block;
     width: 100%;
-    height: 100%;
 }
 /* ***************************************** */
 
@@ -157,17 +162,17 @@ section.text__messages {
     margin-right: 0.9rem;
 }
 .logo_box .logo__text {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     font-weight: 800;
 }
 /* Start navigation section */
 .main-navigation .main-navigation__items {
     display: flex;
-    gap: 30px;
+    gap: 2rem;
 }
 .main-navigation .main-navigation__link {
     color: #707070;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: 500;
     transition: color 0.5s;
 }
@@ -178,10 +183,10 @@ section.text__messages {
 /* Start manage account section */
 .manege-account__buttons a {
     display: inline-block;
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     font-weight: 500;
     border-radius: 0.75rem;
-    padding: 0.8rem 1.25rem;
+    padding: 0.7rem 1.25rem;
     transition: all 0.4s;
 }
 .login {
@@ -233,11 +238,6 @@ section.banner {
     font-weight: 500;
     margin-bottom: 3rem;
 }
-.banner__buttons a,
-.footer__buttons a,
-.share__page_info a {
-    width: 19rem;
-}
 
 .banner__description {
     display: flex;
@@ -279,18 +279,24 @@ section.banner {
 
 /* Start of wyh_love section  */
 .wyh_love {
-    margin: 0 8rem 10rem;
+    margin: 0 7rem 10rem;
 }
 .wyh_love .section__title {
     margin-bottom: 4rem;
 }
 .wyh_love .opinions__box {
+    gap: 3rem;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 .opinions__box .opinion {
+    height: 7rem;
+    display: flex;
     text-align: center;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 .opinion .opinion__title {
     font-size: 2.1rem;
@@ -314,8 +320,8 @@ section.banner {
 .how_connected .section__subtitle {
     margin-bottom: 2rem;
 }
-.how_connected a.btn {
-    width: 20rem;
+.how_connected .section-title__box a.btn {
+    width: 19rem;
 }
 
 .how__connected_info {
@@ -332,6 +338,9 @@ section.banner {
 }
 .how__connected_internal__box > div {
     flex: 1;
+}
+.how__connected_internal__box .right_img-box img {
+    box-shadow: 0px 30px 50px 0px #6464647f;
 }
 /* End of how_connected section */
 
@@ -373,6 +382,7 @@ section.banner {
     width: 100%;
     position: relative;
 }
+
 .one-link_img-box .mobile_text {
     padding: 1.8rem 2.2rem;
     position: absolute;
@@ -472,6 +482,7 @@ footer .login {
     display: inline-block;
     margin-left: 2.5rem;
     margin-right: 0;
+    margin-left: 0;
 }
 footer .contact {
     font-size: 1.6rem;
@@ -479,3 +490,151 @@ footer .contact {
     color: #707070;
 }
 /* End of Footer section */
+
+@media only screen and (max-width: 1620px) {
+    html {
+        font-size: 13px;
+    }
+    header {
+        position: absolute;
+        width: 100%;
+    }
+    section.banner {
+        height: 100vh;
+        padding-top: 20vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .main-title {
+        font-size: 5rem;
+        margin-bottom: 1rem;
+    }
+    .main-title .gradient {
+        font-size: 5.3rem;
+    }
+    .banner-title {
+        font-size: 2.2rem;
+        margin-bottom: 2rem;
+    }
+    .banner__buttons a,
+    .footer__buttons a,
+    .share__page_info a,
+    .how_connected a,
+    .text__messages a {
+        width: 15rem;
+    }
+    .btn {
+        padding: 1.1rem 0;
+        font-size: 1.3rem;
+    }
+
+    .wyh_love .section__title {
+        margin-bottom: 3rem;
+    }
+
+    section.wyh_love,
+    section.how_connected,
+    section.share__page,
+    section.text__messages {
+        margin-bottom: 10rem;
+    }
+
+    .section-title__box {
+        margin-bottom: 6rem;
+    }
+    .section__title {
+        font-size: 3.8rem;
+    }
+    .section__subtitle {
+        font-size: 1.5rem;
+    }
+
+    .left_text-info .left_text-subtitle {
+        font-size: 1.4rem;
+        margin-bottom: 2rem;
+    }
+    .left_text-info .left_text-title {
+        font-size: 4rem;
+        line-height: 5rem;
+        margin-bottom: 1rem;
+    }
+    .left_text-info .left_text-list {
+        margin-bottom: 2.5rem;
+    }
+    .left_text-list .left_text-item {
+        font-size: 1.2rem;
+        line-height: 2em;
+    }
+
+    .link-collects__subtitle {
+        font-size: 1.5rem;
+        margin-bottom: 1.2rem;
+    }
+    .collects .link-collects__subtitle {
+        margin-bottom: 4rem;
+    }
+    .link-collects__title {
+        line-height: 4.2rem;
+        font-size: 3.5rem;
+        margin-bottom: 0.8rem;
+    }
+    .mobile_text span {
+        font-size: 1.1rem;
+    }
+    .mobile_text span.link {
+        font-size: 1.4rem;
+    }
+
+    .footer-title__box {
+        margin: 6rem 0;
+    }
+    .footer-title__box .logo img {
+        width: 9.3rem;
+        height: 8.72rem;
+    }
+    .footer-title__box .footer__title {
+        font-size: 4rem;
+    }
+    .footer-title__box .footer__subtitle {
+        font-size: 1.5rem;
+    }
+    .banner__description .bold {
+        font-weight: 600;
+    }
+}
+@media only screen and (max-width: 1120px) {
+    html {
+        font-size: 11.5px;
+    }
+}
+
+@media only screen and (max-width: 967px) {
+    html {
+        font-size: 10px;
+    }
+    .container {
+        margin: 0 5rem;
+    }
+    .wyh_love {
+        margin: 0 5rem 8rem;
+    }
+    section.banner {
+        height: 75vh;
+        padding-top: 15vh;
+    }
+
+    section.wyh_love,
+    section.how_connected,
+    section.share__page,
+    section.text__messages {
+        margin-bottom: 8rem;
+    }
+    .section-title__box {
+        margin-bottom: 4rem;
+    }
+
+    .how__connected_internal__box {
+        margin-left: 6rem;
+    }
+}
