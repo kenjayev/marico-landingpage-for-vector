@@ -369,11 +369,38 @@ section.banner {
     color: #919191;
     margin-bottom: 0.8rem;
 }
-.one-link__collects .one-link img {
+.one-link_img-box {
+    width: 100%;
+    position: relative;
+}
+.one-link_img-box .mobile_text {
+    padding: 1.8rem 2.2rem;
+    position: absolute;
+    top: 58%;
+    right: 0;
+    height: 30px;
+    width: 85%;
+    border-radius: 5px;
+    background-color: #323234;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.mobile_text span {
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+.mobile_text span.link {
+    font-size: 2rem;
+    color: #84e575;
+}
+
+.one-link__collects .one-link .one-link_img-box > img {
     display: block;
     width: 100%;
     height: auto;
 }
+
 .share__page_info a {
     display: block;
     margin: 0 auto;
@@ -442,6 +469,7 @@ footer .main-navigation__items {
     align-items: center;
 }
 footer .login {
+    display: inline-block;
     margin-left: 2.5rem;
     margin-right: 0;
 }
