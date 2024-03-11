@@ -1,0 +1,453 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;800;900&display=swap);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+    letter-spacing: 0px;
+}
+html {
+    font-size: 16px;
+}
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #000;
+}
+header {
+    padding-top: 2rem;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+li {
+    display: inline-block;
+}
+.container {
+    margin: 0 140px;
+}
+
+/* buttons */
+.btn {
+    display: inline-block;
+    border-radius: 1rem;
+    padding: 1.5rem 0;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: center;
+    transition: all 0.3s;
+}
+.start__btn {
+    border: 3px solid #326cf9;
+    background: #326cf9;
+    color: #fff;
+    margin-right: 1.55rem;
+}
+.start__btn:hover {
+    color: #326cf9;
+    background: transparent;
+    transform: scale(1.03);
+}
+.view-demo__btn {
+    border: 2px solid #707070;
+    color: #707070;
+}
+.view-demo__btn:hover {
+    background: #707070;
+    color: #fff;
+    transform: scale(1.03);
+}
+/* End of buttons */
+
+/* ***************************************** */
+section.wyh_love,
+section.how_connected,
+section.share__page,
+section.text__messages {
+    margin-bottom: 11rem;
+}
+
+.section-title__box {
+    text-align: center;
+    margin-bottom: 7rem;
+}
+.section__step {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #3d82f2;
+}
+.section__title {
+    font-size: 4.3rem;
+    font-weight: 600;
+    text-align: center;
+}
+.section__subtitle {
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: #707070;
+}
+/* ***************************************** */
+
+/* ***************************************** */
+.left_text-info .left_text-subtitle {
+    display: inline-block;
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 4rem;
+}
+.left_text-info .left_text-title {
+    font-size: 4.5rem;
+    font-weight: 600;
+    line-height: 6rem;
+    margin-bottom: 2rem;
+}
+.left_text-info .left_text-title span {
+    color: #3c82f4;
+}
+.left_text-info .left_text-list {
+    margin-bottom: 4.5rem;
+}
+.left_text-list .left_text-item {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 2em;
+}
+.left_text-list .left_text-item span {
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    text-align: center;
+    font-size: 1rem;
+    line-height: 200%;
+    border-radius: 50%;
+    background-color: #2d2d2d;
+}
+.buttons-box a.btn {
+    width: 16rem;
+}
+.right_img-box img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+/* ***************************************** */
+
+/* Start of header section */
+.container.header__container,
+.container.footer__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo_box {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.logo_box > .inner__wrapper {
+    display: flex;
+    align-items: center;
+}
+.logo_box img {
+    margin-right: 0.9rem;
+}
+.logo_box .logo__text {
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+/* Start navigation section */
+.main-navigation .main-navigation__items {
+    display: flex;
+    gap: 30px;
+}
+.main-navigation .main-navigation__link {
+    color: #707070;
+    font-size: 1.8rem;
+    font-weight: 500;
+    transition: color 0.5s;
+}
+.main-navigation .main-navigation__link:hover {
+    color: #3c82f4;
+}
+/* End navigation section */
+/* Start manage account section */
+.manege-account__buttons a {
+    display: inline-block;
+    font-size: 1.8rem;
+    font-weight: 500;
+    border-radius: 0.75rem;
+    padding: 0.8rem 1.25rem;
+    transition: all 0.4s;
+}
+.login {
+    color: #707070;
+    border: 3px solid transparent;
+    margin-right: 1.25rem;
+}
+.login:hover {
+    color: #3c82f4;
+    border: 3px solid #3c82f4;
+    transform: scale(1.03);
+}
+
+.sign-up {
+    background: #306ef7;
+    border: 3px solid #3c82f4;
+}
+.sign-up:hover {
+    background: transparent;
+    color: #306ef7;
+    transform: scale(1.03);
+}
+/* End manage account section */
+/* End of header section */
+
+/* *************************************************** */
+
+/* Start of banner section */
+section.banner {
+    padding: 8rem 10px;
+    text-align: center;
+}
+.main-title {
+    font-size: 6rem;
+    font-weight: 700;
+    margin-bottom: 4.5rem;
+}
+.main-title .gradient {
+    font-size: 6.3rem;
+    position: relative;
+    top: -1.2rem;
+
+    background: -webkit-linear-gradient(0deg, #fe6783 1.9%, #ffbf84 97.1%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.banner-title {
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-bottom: 3rem;
+}
+.banner__buttons a,
+.footer__buttons a,
+.share__page_info a {
+    width: 19rem;
+}
+
+.banner__description {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1.7rem;
+    font-size: 1.8rem;
+    color: #707070;
+}
+.banner__description .dot {
+    position: relative;
+    display: inline-block;
+    width: 1.2rem;
+    height: 1.2rem;
+    background-color: #0fc65c;
+    border-radius: 50%;
+    margin-right: 12px;
+}
+.banner__description .dot::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    content: "";
+    display: inline-block;
+    width: 1.8rem;
+    height: 1.8rem;
+    background-color: #0fc65c;
+    border-radius: 50%;
+    opacity: 24%;
+}
+.banner__description .bold {
+    font-weight: 700;
+    margin-right: 10px;
+}
+/* End of banner section */
+
+/* *************************************************** */
+
+/* Start of wyh_love section  */
+.wyh_love {
+    margin: 0 8rem 10rem;
+}
+.wyh_love .section__title {
+    margin-bottom: 4rem;
+}
+.wyh_love .opinions__box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.opinions__box .opinion {
+    text-align: center;
+}
+.opinion .opinion__title {
+    font-size: 2.1rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+.opinion .opinion__title img {
+    margin-right: 0.5rem;
+}
+.opinion .opinion__discription {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #707070;
+}
+/* End of wyh_love section  */
+
+/* *************************************************** */
+
+/* Start of how_connected section */
+.how_connected .section__subtitle {
+    margin-bottom: 2rem;
+}
+.how_connected a.btn {
+    width: 20rem;
+}
+
+.how__connected_info {
+    widows: 100%;
+    display: flex;
+    justify-content: end;
+}
+.how__connected_internal__box {
+    margin-left: 11.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+}
+.how__connected_internal__box > div {
+    flex: 1;
+}
+/* End of how_connected section */
+
+/* *************************************************** */
+
+/* Start of Share_Page section  */
+.share__page {
+    margin: 0 6rem 11rem 6rem;
+}
+.share__page .one-link__collects {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+.one-link__collects > div {
+    width: 50%;
+    flex: 1;
+    background-color: #0d0d0d;
+    padding: 2rem 0 0 2.5rem;
+}
+.link-collects__subtitle {
+    display: inline-block;
+    color: #0fc65c;
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+}
+.collects .link-collects__subtitle {
+    margin-bottom: 5.2rem;
+}
+.link-collects__title {
+    line-height: 5.2rem;
+    font-size: 4.5rem;
+    font-weight: 600;
+    color: #919191;
+    margin-bottom: 0.8rem;
+}
+.one-link__collects .one-link img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.share__page_info a {
+    display: block;
+    margin: 0 auto;
+}
+/* End of Share_Page section  */
+
+/* *************************************************** */
+
+/* Start of Comments Section */
+.comment {
+    margin-bottom: 8.5rem;
+    padding: 0 3rem;
+}
+.comment .section__title {
+    margin-bottom: 3.2rem;
+}
+.comment img {
+    width: 100%;
+    height: auto;
+}
+/* End of Comments Section */
+
+/* *************************************************** */
+
+/* Start of Audience section */
+.audience {
+    background: url("../img/audience.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 50rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* End of Audience section */
+
+/* *************************************************** */
+
+/* Start of Footer section */
+.footer-title__box {
+    margin: 7rem 0;
+    text-align: center;
+}
+.footer-title__box .logo img {
+    width: 10.3rem;
+    height: 9.62rem;
+}
+.footer-title__box .footer__title {
+    font-size: 5rem;
+    font-weight: 600;
+}
+.footer-title__box .footer__subtitle {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+footer {
+    margin-bottom: 1.5rem;
+}
+footer .main-navigation__items {
+    display: flex;
+    align-items: center;
+}
+footer .login {
+    margin-left: 2.5rem;
+    margin-right: 0;
+}
+footer .contact {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #707070;
+}
+/* End of Footer section */
