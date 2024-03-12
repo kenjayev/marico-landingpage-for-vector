@@ -409,6 +409,13 @@ section.banner {
     font-size: 2rem;
     color: #84e575;
 }
+.one-link_img-box .clock {
+    position: absolute;
+    top: 26%;
+    left: 24%;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
 
 .one-link__collects .one-link .one-link_img-box > img {
     display: block;
@@ -709,11 +716,19 @@ footer .contact {
         transition: all 0.3s ease;
     }
 
-    .main-title {
-        font-size: 3rem;
+    section.banner {
+        padding-top: 17vh;
     }
+    .main-title,
     .main-title .gradient {
-        font-size: 3.5rem;
+        top: 0;
+        font-size: 4.5rem;
+        background: -webkit-linear-gradient(0deg, #fe6783 1.9%, #ffbf84 97.1%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .main-title br {
+        display: none;
     }
     .banner-title {
         font-size: 2rem;
@@ -734,6 +749,10 @@ footer .contact {
         text-align: start;
     }
 
+    .share__page {
+        margin-left: 4rem;
+        margin-right: 4rem;
+    }
     .share__page .one-link__collects {
         flex-direction: column;
         align-items: center;
@@ -743,10 +762,16 @@ footer .contact {
     }
 
     .comment {
-        margin-bottom: 6rem;
+        margin-bottom: 4rem;
+        padding: 0 1.5rem;
     }
     .section__title {
         font-size: 3rem;
+    }
+    .section__subtitle br,
+    .banner-title br,
+    .section__title br {
+        display: none;
     }
     .audience {
         height: 45rem;
@@ -754,5 +779,11 @@ footer .contact {
 
     footer .container {
         flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 290px) {
+    html {
+        font-size: 7px;
     }
 }
