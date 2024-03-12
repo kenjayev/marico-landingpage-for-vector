@@ -505,7 +505,7 @@ footer .contact {
         width: 100%;
     }
     section.banner {
-        height: 100vh;
+        min-height: 100vh;
         padding-top: 20vh;
         display: flex;
         align-items: center;
@@ -625,7 +625,7 @@ footer .contact {
         margin: 0 5rem 8rem;
     }
     section.banner {
-        height: 75vh;
+        min-height: 75vh;
         padding-top: 15vh;
     }
 
@@ -648,7 +648,7 @@ footer .contact {
 }
 @media only screen and (max-width: 721px) {
     html {
-        font-size: 11.5px;
+        font-size: 9px;
     }
 
     header .main-navigation,
@@ -709,6 +709,16 @@ footer .contact {
         transition: all 0.3s ease;
     }
 
+    .main-title {
+        font-size: 3rem;
+    }
+    .main-title .gradient {
+        font-size: 3.5rem;
+    }
+    .banner-title {
+        font-size: 2rem;
+    }
+
     .how__connected_internal__box {
         gap: 2rem;
         flex-direction: column;
@@ -719,5 +729,30 @@ footer .contact {
     }
     .left_text-info .left_text-subtitle {
         margin-bottom: 0.5rem;
+    }
+    .left_text-list {
+        text-align: start;
+    }
+
+    .share__page .one-link__collects {
+        flex-direction: column;
+        align-items: center;
+    }
+    .one-link__collects > div {
+        width: 100%;
+    }
+
+    .comment {
+        margin-bottom: 6rem;
+    }
+    .section__title {
+        font-size: 3rem;
+    }
+    .audience {
+        height: 45rem;
+    }
+
+    footer .container {
+        flex-direction: column;
     }
 }
